@@ -4,9 +4,9 @@ require('dotenv').config();
 // Import required modules
 const express = require('express'); // Import Express.js framework
 const mongoose = require('mongoose'); // Import Mongoose for MongoDB interaction
-const cors = require('cors'); // Import CORS middleware for cross-origin resource sharing
+//const cors = require('cors'); // Import CORS middleware for cross-origin resource sharing
 const http = require('http'); // Import Node.js HTTP module
-const socketIo = require('socket.io'); // Import Socket.IO
+//const socketIo = require('socket.io'); // Import Socket.IO
 
 // Create an Express application
 const app = express();
@@ -20,8 +20,8 @@ db.on('error', (error) => console.error(error)); // Log any errors that occur du
 db.once('open', () => console.log('Connected to errand_hub DATABASE')); // Log a message once the database connection is open
 
 // Enable CORS for all routes
-app.use(cors());
-app.options('*', cors());
+//app.use(cors());
+//app.options('*', cors());
 
 // Parse incoming requests with JSON payloads
 app.use(express.json());
@@ -55,16 +55,16 @@ const port = process.env.PORT || '4545';
 const server = http.createServer(app);
 
 // Attach Socket.IO to the HTTP server
-const io = socketIo(server);
+//const io = socketIo(server);
 
 // Socket.IO logic goes here
-io.on('connection', (socket) => {
+/*io.on('connection', (socket) => {
   console.log('A user connected');
   // Handle socket events here
   socket.on('disconnect', () => {
     console.log('User disconnected');
   });
-});
+});*/
 
 // Start the server and listen for incoming requests on the specified port
 server.listen(port, () => console.log(`Server started at port ${port}`));
