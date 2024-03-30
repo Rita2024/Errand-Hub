@@ -1,8 +1,9 @@
 {
-  "name": "Errand-Hub",
+  "name": "errand-hub",
   "version": "1.0.0",
   "description": "Welcome to our Courier Management System Web Application!",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon server.js",
