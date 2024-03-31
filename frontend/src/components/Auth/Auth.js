@@ -57,8 +57,8 @@ const Auth = () => {
                 {/* Intro Landing */}
                 <Grid item xs={6} marginTop={12}>
                   <img
-                    src='https://i.ibb.co/svJ55Td/Courier-Tn-M-removebg-preview.png'
-                    alt='Courier-Tn-M'
+                    src='https://github.com/Kingvadee/Errand-Hub/blob/main/frontend/public/Errand-Hub.png?raw=true'
+                    alt='errand-hub'
                   />
                 </Grid>
               </Grid>
