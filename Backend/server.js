@@ -35,10 +35,11 @@ app.patch('*', function (req, res, next) {
   return next()
 })
 */
+const auth = require('./routes/auth.js') 
+const apis = require('./routes/api.js')
 
-const apis = require('./routes/api')
-app.use('/api', apis)
-
+app.use('/auth', auth)
+app.use('/api', apis) 
 const port = process.env.PORT || '4545'
 
 app.listen(port, () => console.log('Server started at port 4545'))
