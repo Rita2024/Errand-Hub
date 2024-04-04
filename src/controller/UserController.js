@@ -41,7 +41,7 @@ const Users = {
     }
   },
   
-  // Other methods for user operations...
+  // Other methods for user operations..
 };
 
 export default Users;

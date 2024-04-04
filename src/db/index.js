@@ -1,4 +1,3 @@
-/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
 // import dbconfig from './config';

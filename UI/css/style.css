@@ -19,7 +19,7 @@ ul{
 
 .button_1{
     height: 38px;
-    background: #2600fd;
+    background:#2600fd;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
@@ -32,7 +32,7 @@ ul{
 .button_2{
     float: right;
     height: 38px;
-    background: #2600fd;
+    background:#2600fd;
     border: 0;
     padding-left: 20px;
     padding-right: 20px;
