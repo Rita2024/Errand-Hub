@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken'); // JWT for token generation
 const router = express.Router();
 
 // User model with password field
-const User = require('./models/User');
+const User = require('../models/userModel.js');
 
 // Signup route
 router.post('/signup', async (req, res) => {
