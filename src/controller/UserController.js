@@ -1,9 +1,8 @@
-/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
-import moment from 'moment';
-import uuidv4 from 'uuid/v4';
-import Helper from './HelperController';
-import db from '../db';
-import User from '../model/user';
+import moment from 'moment'; // Importing the 'moment' library for date manipulation
+import uuidv4 from 'uuid/v4'; // Importing 'uuidv4' for generating UUIDs
+import Helper from './HelperController'; // Importing the HelperController for utility functions
+import db from '../db'; // Importing the database connection module
+import User from '../model/user'; // Importing the User model
 
 const userRoles = {
   ADMIN: 'ADMIN',
@@ -11,6 +10,7 @@ const userRoles = {
 };
 
 const Users = {
+  // Method for handling user signup
   async signup(req, res) {
     const {
       email, username, firstName, lastName, password,
