@@ -1,5 +1,4 @@
 /* eslint-disable consistent-return */
-/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
