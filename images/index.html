@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SendIT | About </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="descrition" content="Web app to deliver parcels">
+    <meta name="kewords" content="Parcel, Delivery">
+    <meta name="author" content="Fabrice Niyomwungeri">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script type="text/javascript" src="./js/quickOrder.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">SendIT</span></h1>
+            </div>
+           <form action="login.html">
+                <button type="submit" class="button_2" >Login</button>
+           </form>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home |</a></li>
+                    <li><a href="about.html">What we do |</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>SendIT</h1>
+            <p>
+                No one knows courier like us
+            </p>
+            <div class="quick-quote">
+                        <input id="orderFrom" class="input_send" type="text" placeholder="From *" >
+                        <input id="orderTo" class="input_send" type="text" placeholder="Destination *" >
+                        <input id="orderWeight" class="input_send" type="number" placeholder=" Weight *">
+                        <br>
+                        <button id="quickQuote" type="submit" class="create_Quote">Get A Quick Quote</button>
+        </div>
+        </div>
+    </section>
+    <footer>SendIT &copy; 2018</footer>
+</body>
+</html>
