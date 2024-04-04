@@ -1,23 +1,38 @@
-import Auth from './components/Auth/Auth'
-import { useSelector } from 'react-redux'
-
-import DepartmentMain from './components/DepartmentMain'
-import DeliveryAgentMain from './components/DeliveryAgentMain'
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import HomePage from "scenes/homePage";
+import LoginPage from "scenes/loginPage";
+import ProfilePage from "scenes/profilePage";
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import { themeSettings } from "./theme";
 
 function App() {
-  const state = useSelector((state) => state)
+	  const mode = useSelector((state) => state.mode);
+	  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
+	  const isAuth = Boolean(useSelector((state) => state.token));
 
-  return (
-    <>
-      {state.auth.accessToken == null ? (
-        <Auth />
-      ) : state.auth.deliveryAgent != null ? (
-        <DeliveryAgentMain />
-      ) : (
-        <DepartmentMain />
-      )}
-    </>
-  )
+	  return (
+		      <div className="app">
+		        <BrowserRouter>
+		          <ThemeProvider theme={theme}>
+		            <CssBaseline />
+		            <Routes>
+		              <Route path="/" element={<LoginPage />} />
+		              <Route
+		                path="/home"
+		                element={isAuth ? <HomePage /> : <Navigate to="/" />}
+		              />
+		              <Route
+		                path="/profile/:userId"
+		                element={isAuth ? <ProfilePage /> : <Navigate to="/" />}
+		              />
+		            </Routes>
+		          </ThemeProvider>
+		        </BrowserRouter>
+		      </div>
+		    );
 }
 
-export default App
+export default App;
