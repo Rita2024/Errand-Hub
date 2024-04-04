@@ -1,7 +1,6 @@
-const mongoose = require('mongoose');
-const { Schema } = mongoose;
+const mongoose = require('mongoose')
 
-const orderSchema = new Schema({
+const orderSchema = new mongoose.Schema({
   customerName: {
     type: String,
     required: true
@@ -36,4 +35,4 @@ const orderSchema = new Schema({
 });
 
 // Create a model using the schema
-module.exports = mongoose.model('Order', orderSchema);
+module.exports = mongoose.model('Order', orderSchema)

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Errand-Hub | view Parcel </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="descrition" content="Web app to deliver parcels">
+    <meta name="kewords" content="Parcel, Delivery">
+    <meta name="author" content="Errand-Hub">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/send.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/message.css" />
+    <script type="text/javascript" src="./js/adminView.js"></script>
+    <script type="text/javascript" src="./js/editParcelAdmin.js"></script>
+
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+              <h1><span class="highlight">SendIT</span></h1>
+            </div>
+            <form action="login.html">
+                <button type="submit" class="button_2">Log Out</button>
+           </form>
+           <div id="sayHello"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home |</a></li>
+                    <li class="current"><a href="index.html">Send a Parcel |</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div style="display: none;" id="output-error" class="error-msg">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <div style="display: none;" id="output-success" class="success-msg">
+            <i class="fa fa-check"></i>
+          </div>
+          <div style="display: none;" id="output-info" class="info-msg">
+            <i class="fa fa-info-circle"></i>
+          </div>
+        <div class="row">
+            <div class="col-4">
+                <div id="createParcel">
+                    <label for="location"><b>Location</b></label>
+                    <input id="location-parcel" type="text" name="location" placeholder="Enter location" required>
+
+                
+                    <label for="destination"><b>Destination</b></label>
+                    <input id="destination-parcel" type="text"  name="destination" placeholder="Enter destination" required>
+                
+                    <label for="present_location"><b>Present location</b></label>
+                    <input id="present-location-parcel" type="text" name="present_location" placeholder="Enter present_location" required>
+        
+                    <label for="weight"><b>Weight</b></label>
+                    <input id="weight-parcel" type="text"name="weight" placeholder="Enter weight" required>
+        
+                    <label for="phone"><b>Receiver phone</b></label>
+                    <input id="phone-parcel" type="text"  name="phone" placeholder="Enter phone" required>
+                </div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div id="createParcel">
+                    <label for="status"><b>Status</b></label>
+                    <div id="status" class="select-block">
+ 
+                    </div>
+                    <label for="createdTime"><b>Created Date</b></label>
+                    <input id="createdTime-parcel" type="text" name="createdTime" placeholder="Enter createdTime" plac required>
+                </div>
+            </div>
+          </div>
+        <input id="update-parcel" type="submit" class="createbtn" value="Save changes"/>
+      </div>
+    </div>
+</body>
+</html>
