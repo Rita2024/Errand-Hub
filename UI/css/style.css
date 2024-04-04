@@ -1,0 +1,306 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* Global */
+ul{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button_1{
+    height: 38px;
+    background: #2600fd;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 2px;
+    color:#ffffff;
+    font-weight: bold;
+    width: 72%;
+    margin-left:14%; 
+}
+.button_2{
+    float: right;
+    height: 38px;
+    background: #2600fd;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.cancelOrder{
+    float: right;
+    height: 38px;
+    background: red;
+    border: 0;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.btn_send{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 38px;
+    background: #b30047;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-weight: bold;
+    float: left;
+}
+.create_Quote{
+    height: 38px;
+    background: #b30047;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+.input_g{
+    padding: 4px;
+    height: 25px;
+    width: 70%;
+    margin:7px;
+    margin-left:14%;
+}
+.input_send{
+    padding: 4px;
+    height: 25px;
+    width: 240px;
+    margin:7px;
+}
+#search{
+    padding: 4px;
+    height: 25px;
+    width: 170px;
+    margin:7px;
+    float: right;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width : 496px){
+    .button_1{
+        margin-top: 3px;
+    }
+    #pswd{
+        margin-top: 3px;
+    }
+}
+/* Header */
+header{
+    background: #ffffff;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #2600fd 3px solid;
+}
+header a{
+    color: #2600fd;
+    text-decoration: none;
+    font-size: 16px;
+}
+a:hover {
+    cursor:pointer;
+   }
+.fa-times-circle{
+    color: red;
+}
+header li{
+    display: inline;
+}
+
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin: 10px;
+}
+
+header .highlight, header .current a{
+    color: #2600fd;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #b39534;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+   
+    min-height: 650px;
+    background: url('../img/graphicDesign.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #ffffff;
+}
+.calculate-quick-quote{
+    margin-top: 10%;
+    text-align: center;
+}
+#showcase2{
+    margin-top: 8%;
+    min-height: 600px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* about */
+aside#sideBar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+article#main-article{
+    float: left;
+    width: 65%;
+    margin-top: 10px;
+    padding: 5px;
+}
+.dark{
+    padding: 15px;
+    background: #999071;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* footer */
+footer{
+    padding: 20px;
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2600fd;
+    text-align: center;
+}
+
+/* table parcel table */
+#parcels {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#parcels td, #parcels th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#parcels td{
+   text-align: center;
+}
+
+#parcels tr:nth-child(even){background-color: #f2f2f2;}
+
+#parcels tr:hover {background-color: #ddd;}
+
+#parcels th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2600fd;
+    color: white;
+}
+/* users parcel table */
+#users {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#users td{
+   text-align: center;
+}
+
+#users tr:nth-child(even){background-color: #f2f2f2;}
+
+#users tr:hover {background-color: #ddd;}
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2600fd;
+    color: white;
+}
+@media(max-width: 600px){
+    header #branding,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+}
+.login-page, .register-form{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:40%; 
+    margin:0 auto;
+}
+table {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.message{
+    margin-left:14%; 
+}
+.output{
+    margin-left:14%;
+    margin-top: 20%; 
+}
+/* css grid  */
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
