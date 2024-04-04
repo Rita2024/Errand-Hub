@@ -304,3 +304,7 @@ tr:nth-child(even) {
   .col-4 {
     width: 33.33%;
   }
+
+.logo_name, .write_up{
+    color: #141414;
+}

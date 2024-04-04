@@ -10,8 +10,8 @@ async function newUserEmail(email, firstName, lastName, status, presentationLoca
       // secure: false, // true for 465, false for other ports
       service: 'gmail',
       auth: {
-        user: 'nyf2k16@gmail.com', // generated ethereal user
-        pass: 'CIERRY12', // generated ethereal password
+        user: 'errandhub21@gmail.com', // generated ethereal user
+        pass: '@errandhub21#', // generated ethereal password
       },
     });
 
