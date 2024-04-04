@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 // Importing necessary libraries for handling dates, generating unique IDs, interacting with the database, and sending emails.
 import moment from 'moment'; // Library for handling dates and times.
 import uuidv4 from 'uuid/v4'; // Library for generating unique IDs.
 import db from '../db'; // Database connection module.
 import Parcel from '../model/parcel'; // Custom Parcel model definition.
 import mailSender from '../middleware/MailSender'; // Middleware for sending emails.
+=======
+import moment from 'moment';
+import uuidv4 from 'uuid/v4';
+import db from '../db';
+import Parcel from '../model/parcel';
+import mailSender from '../middleware/MailSender';
+>>>>>>> 9c5149136aa7c50ffb314a00efee5d6592dcd740
 
 // Define different statuses a parcel can have.
 const parcelStatus = {

@@ -1,8 +1,8 @@
 // We're disabling a rule that makes sure we use the same style for returning values.
 // This is just a way to make our code look nicer.
 /* eslint-disable consistent-return */
-
 // We're importing two special tools we'll use later: bcrypt and jwt.
+
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 

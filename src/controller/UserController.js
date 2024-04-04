@@ -1,8 +1,9 @@
-import moment from 'moment'; // Importing the 'moment' library for date manipulation
-import uuidv4 from 'uuid/v4'; // Importing the 'uuid' library for generating UUIDs
-import Helper from './HelperController'; // Importing the 'HelperController' module
-import db from '../db'; // Importing the 'db' module for database operations
-import User from '../model/user'; // Importing the 'User' model
+/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
+import moment from 'moment';
+import uuidv4 from 'uuid/v4';
+import Helper from './HelperController';
+import db from '../db';
+import User from '../model/user';
 
 const userRoles = {
   ADMIN: 'ADMIN',

@@ -1,14 +1,16 @@
-import { Pool } from 'pg'; // Importing the Pool class from 'pg' for handling database connections
-import dotenv from 'dotenv'; // Importing the 'dotenv' library/module for loading environment variables
+/* Code modified from a file obtained from https://github.com/olawalejarvis/reflection_app_server */
+import { Pool } from 'pg';
+import dotenv from 'dotenv';
+// import dbconfig from './config';
 
 dotenv.config(); // Loading environment variables from a .env file into process.env
 
 const pool = new Pool({
-  user: process.env.PGUSER, // Setting the user for the database connection
-  host: process.env.PGHOST, // Setting the host for the database connection
-  database: process.env.PGNDATABASE, // Setting the database name for the connection
-  port: process.env.PGPORT, // Setting the port for the database connection
-  password: process.env.PGPASSWORD, // Setting the password for the database connection
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGNDATABASE,
+  port: process.env.PGPORT,
+  password: process.env.PGPASSWORD,
 });
 
 function query(text, params) {
