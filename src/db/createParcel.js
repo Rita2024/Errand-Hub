@@ -16,7 +16,7 @@ parcels (
 )`;
 
 setTimeout(() => {
-  db.query(createParcelsTable)
+  db.query(createParcelsTable) // Executes a database query to create the parcels table
     .then(() => {
     })
     .catch(() => {
