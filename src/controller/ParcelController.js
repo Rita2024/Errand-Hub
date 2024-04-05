@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import necessary libraries and modules
 import moment from 'moment'; // Library for handling dates and time
 import uuidv4 from 'uuid/v4'; // Function to generate unique identifiers
@@ -6,6 +7,14 @@ import Parcel from '../model/parcel'; // Model for parcel data structure
 import mailSender from '../middleware/MailSender'; // Middleware for sending emails
 
 // Define parcel status constants
+=======
+import moment from 'moment';
+import uuidv4 from 'uuid/v4';
+import db from '../db';
+import Parcel from '../model/parcel';
+import mailSender from '../middleware/MailSender';
+
+>>>>>>> e568c8643f8373c57f10f6a8820fd291310c9731
 const parcelStatus = {
   PENDING: 'PENDING',
   IN_TRANSIT: 'IN_TRANSIT',
@@ -14,7 +23,10 @@ const parcelStatus = {
   CANCELLED: 'CANCELLED',
 };
 
+<<<<<<< HEAD
 // Define SQL queries for parcel operations
+=======
+>>>>>>> e568c8643f8373c57f10f6a8820fd291310c9731
 const createParcelQuery = `INSERT INTO
       parcels(id, location, destination ,present_location, weight, owner_id, receiver_phone, status, created_date, modified_date)
       VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
@@ -41,14 +53,20 @@ WHERE id=$3 AND owner_id = $4 returning *`;
 
 const getUserQuery = 'SELECT * FROM users WHERE id = $1';
 
+<<<<<<< HEAD
 // Define an object called "Parcels" with functions for parcel management
+=======
+>>>>>>> e568c8643f8373c57f10f6a8820fd291310c9731
 const Parcels = {
   async create(req, res) {
     const {
       location, destination, presentLocation, weight, receiverPhone,
     } = req.body;
 
+<<<<<<< HEAD
     // Create a new parcel object with extracted information
+=======
+>>>>>>> e568c8643f8373c57f10f6a8820fd291310c9731
     const newParcel = new Parcel(uuidv4(), location, destination, presentLocation, weight,
       req.user.id, receiverPhone, parcelStatus.PENDING, moment(new Date()), moment(new Date()));
 

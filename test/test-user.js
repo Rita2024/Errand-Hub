@@ -10,7 +10,7 @@ let token = '';
 describe('POST /api/v1/auth/signup', () => {
   // Test case for successful user login
   it('should return 200 - Success', (done) => {
-    chai.request(app).post('/api/v1/auth/login').send({ email: 'niomwungeri@gmail.com', password: '123' })
+    chai.request(app).post('/api/v1/auth/login').send({ email: 'errandhub21@gmail.com', password: '123' })
       .end((err, res) => {
         res.body.should.have.status(200); // Checking if the response status code is 200
         token = res.body.token; // Saving the authentication token for later use
@@ -20,7 +20,7 @@ describe('POST /api/v1/auth/signup', () => {
   
   // Test case for incorrect credentials during login
   it('should return 400 - The credentials you provided is incorrect', (done) => {
-    chai.request(app).post('/api/v1/auth/login').send({ email: 'niomwungeri@gmail.com', password: '123revc' })
+    chai.request(app).post('/api/v1/auth/login').send({ email: 'errandhub21@gmail.com', password: '123revc' })
       .end((err, res) => {
         res.body.should.have.status(400); // Checking if the response status code is 400
         res.body.should.have.property('message').equal('The credentials you provided is incorrect'); // Checking the error message
