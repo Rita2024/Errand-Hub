@@ -1,17 +1,18 @@
 class Parcel {
-    constructor(id, location, destination, presentLocation, weight, ownerId, receiverPhone, status,
-      createdDate, modifiedDate) {
-      this.id = id;
-      this.location = location;
-      this.destination = destination;
-      this.presentLocation = presentLocation;
-      this.weight = weight;
-      this.ownerId = ownerId;
-      this.receiverPhone = receiverPhone;
-      this.status = status;
-      this.createdDate = createdDate;
-      this.modifiedDate = modifiedDate;
-    }
+  constructor(id, location, destination, presentLocation, weight, ownerId, receiverPhone, status,
+    createdDate, modifiedDate) {
+    // Assigning values to properties of the Parcel object
+    this.id = id; // Assigning id
+    this.location = location; // Assigning location
+    this.destination = destination; // Assigning destination
+    this.presentLocation = presentLocation; // Assigning presentLocation
+    this.weight = weight; // Assigning weight
+    this.ownerId = ownerId; // Assigning ownerId
+    this.receiverPhone = receiverPhone; // Assigning receiverPhone
+    this.status = status; // Assigning status
+    this.createdDate = createdDate; // Assigning createdDate
+    this.modifiedDate = modifiedDate; // Assigning modifiedDate
   }
-  
-  export default Parcel;
+}
+
+export default Parcel; // Exporting the Parcel class
