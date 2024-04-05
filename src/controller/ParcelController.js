@@ -11,8 +11,8 @@ import mailSender from '../middleware/MailSender'; // Middleware for sending ema
 import moment from 'moment';
 import uuidv4 from 'uuid/v4';
 import db from '../db';
-import Parcel from '../model/parcel';
-import mailSender from '../middleware/MailSender';
+import Parcel from '../model/parcel.js';
+import mailSender from '../middleware/MailSender.js';
 
 >>>>>>> e568c8643f8373c57f10f6a8820fd291310c9731
 const parcelStatus = {
