@@ -1,71 +1,87 @@
+<!-- This is a special instruction that tells the browser that this document is written in HTML -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Errand-Hub | Home </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="descrition" content="Web app to deliver parcels">
-    <meta name="kewords" content="Parcel, Delivery">
-    <meta name="author" content="Errand-Hub">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Errand-Hub</span></h1>
-            </div>
-            <form action="login.html">
-                <button type="submit" class="button_2" >Log out</button>
-           </form>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home |</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section id="about">
-        <div class="container">
-            <article id="main-article">
-                <h1>About Us</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Mauris ultricies fermentum lacus, sed scelerisque quam ultricies nec. 
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed velit ligula, volutpat at leo a, bibendum ultrices ex. Quisque eget mattis metus, vitae interdum diam. Pellentesque ullamcorper urna sem, non fermentum justo porttitor vel. Mauris aliquam sapien sit amet feugiat faucibus. 
-                    Proin varius sed mauris eu sagittis. 
-                    In non sem in mauris vulputate tincidunt. 
-                    Duis vel dapibus dui. Vestibulum facilisis tellus eu sodales lacinia. 
-                    Pellentesque aliquam urna enim, sit amet vehicula metus gravida ut. 
-                    Quisque non elit sed tortor interdum tincidunt id sagittis nibh. Morbi vitae convallis diam.
-                    Aliquam sed accumsan augue. Mauris eleifend laoreet sapien consequat scelerisque. Curabitur quis mauris mattis,
-                    ultrices massa sed, convallis odio.
-                </p>
-                <p>
-                    Curabitur malesuada ipsum feugiat turpis vestibulum, interdum condimentum dolor maximus. 
-                    Donec nec hendrerit libero. Nulla in elementum est, sed molestie metus. 
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Proin maximus hendrerit sapien molestie tincidunt. Praesent vulputate dignissim facilisis. 
-                    Vestibulum aliquet sem mauris, et tempor ex sagittis a. Fusce ac hendrerit ex. 
-                    Sed eleifend rhoncus diam nec molestie. Fusce aliquam consequat lacus sed consequat.
-                </p>
-            </article>
-            <aside id="sideBar">
-                <div class="dark">
-                    <h1>What We Do</h1>
-                    <p>Curabitur malesuada ipsum feugiat turpis vestibulum, interdum condimentum dolor maximus. 
-                        Donec nec hendrerit libero. Nulla in elementum est, sed molestie metus. </p>
-                    <p>
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Proin maximus hendrerit sapien molestie tincidunt.
-                    </p>
-                </div>
-            </aside>
-        </div>
-    </section>
 
-    <footer>Errand-Hub &copy; 2024</footer>
-</body>
-</html>
+<!-- This is the starting tag of HTML and it tells the browser that everything inside this tag is HTML code -->
+<html lang="en">
+
+	<!-- This part is like the brain of the webpage. It tells the browser what the webpage looks like, what language it's written in, and other important information -->
+	<head>
+
+		    <!-- This tells the browser how to interpret the characters in the webpage -->
+		        <meta charset="utf-8" />
+
+			    <!-- This tells the browser to use the latest version of Internet Explorer to display the webpage -->
+			        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+				    <!-- This is the title of the webpage, which appears on the browser's tab -->
+				        <title>Errand-Hub | Home </title>
+
+					    <!-- This tells the browser how the webpage should be displayed on different devices, like computers, tablets, and phones -->
+					        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+						    <!-- This is a brief description of what the webpage is about, which helps search engines understand the content of the page -->
+						        <meta name="description" content="Web app to deliver parcels">
+
+							    <!-- These are words related to the webpage's content, which also help search engines understand what the page is about -->
+							        <meta name="keywords" content="Parcel, Delivery">
+
+								    <!-- This is the name of the person or organization that created the webpage -->
+								        <meta name="author" content="Errand-Hub">
+
+									    <!-- This links the webpage to an external stylesheet file called "style.css" which contains the design (colors, fonts, layout, etc.) of the webpage -->
+									        <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+	</head>
+
+	<!-- This is the body of the webpage. It contains all the visible content like text, images, and buttons -->
+	<body>
+
+		    <!-- This is the header section of the webpage, usually containing the logo, navigation menu, and other important information -->
+		        <header>
+
+				        <!-- This is a container that holds everything in the header section -->
+					        <div class="container">
+
+							            <!-- This is the branding or the name of the website -->
+								                <div id="branding">
+											                <!-- "Errand-Hub" is the name displayed on the webpage -->
+													                <h1><span class="highlight">Errand-Hub</span></h1>
+															            </div>
+
+																                <!-- This is a button that lets users log out -->
+																		            <form action="login.html">
+																				                    <button type="submit" class="button_2">Log out</button>
+																						               </form>
+
+																							                   <!-- This is a navigation menu that helps users move around the website -->
+																									               <nav>
+																											                       <ul>
+																														                           <!-- These are links to different pages of the website -->
+																																	                       <li><a href="index.html">Home |</a></li>
+																																			                           <li class="current"><a href="about.html">About</a></li>
+																																						                   </ul>
+																																								               </nav>
+																																									               </div>
+																																										           </header>
+
+																																											       <!-- This is the main section of the webpage where most of the important content is -->
+																																											           <section id="about">
+																																													           <!-- This is a container that holds everything in the main section -->
+																																														           <div class="container">
+
+																																																               <!-- This is an article, or a section of text, that talks about the website -->
+																																																	                   <article id="main-article">
+																																																				                   <!-- This is the main heading of the article -->
+																																																						                   <h1>About Us</h1>
+
+																																																								                   <!-- This is a paragraph of text that describes what the website does -->
+																																																										                   <p>
+																																																												                       Errand-Hub is like a special delivery service for packages. It helps people send and receive parcels quickly and easily.
+																																																														                           </p>
+																																																																	                   <p>
+																																																																			                       It's kind of like when you send a letter or a gift to someone, but Errand-Hub does it for bigger things, like packages or boxes. 
+																																																																					                           </p>
+																																																																								               </article>
+
+																																																																									                   <!-- This is a sidebar, which usually contains additional information or links -->
+																																																																											               <aside id="sideBar">
+																																																																													                       <!-- This is a dark-colored box that contains more information about what Errand-
