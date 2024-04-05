@@ -22,4 +22,4 @@ setTimeout(() => {
     .catch(() => {
       // console.log(err);
     });
-}, 10)
+}, 10);
