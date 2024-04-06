@@ -1,8 +1,8 @@
-import moment from 'moment';
-import uuidv4 from 'uuid/v4';
-import db from '../db';
-import Parcel from '../model/parcel.js';
-import mailSender from '../middleware/MailSender.js';
+const moment = require('moment');
+const { v4: uuidv4 } = require('uuid');
+const db = require('../db');
+const Parcel = require('../model/parcel.js');
+const mailSender = require('../middleware/MailSender.js');
 
 const parcelStatus = {
   PENDING: 'PENDING',
@@ -56,7 +56,7 @@ const Parcels = {
       return res.status(400).send({ message: error, status: 400 });
     }
   },
-  // Fetch all parcel delivery orders
+
   async getAll(req, res) {
     const findAllQuery = 'SELECT * FROM parcels';
     try {
@@ -70,7 +70,7 @@ const Parcels = {
       });
     }
   },
-  // Fetch all parcel delivery orders by a specific user
+
   async parcelByUser(req, res) {
     const parcelByUserQuery = 'SELECT * FROM parcels WHERE owner_id = $1';
 
@@ -85,7 +85,7 @@ const Parcels = {
       });
     }
   },
-  // Fetch a specific parcel delivery order
+
   async getOne(req, res) {
     try {
       const { rows, rowCount } = await db.query(findOneQuery, [req.params.parcelId, req.user.id]);
@@ -106,7 +106,7 @@ const Parcels = {
       });
     }
   },
-  // Fetch a specific parcel delivery order
+
   async getOneAdmin(req, res) {
     try {
       const { rows, rowCount } = await db.query(findOneQueryAdmin, [req.params.parcelId]);
@@ -127,7 +127,7 @@ const Parcels = {
       });
     }
   },
-  // Cancel the specific parcel delivery order
+
   async cancel(req, res) {
     try {
       const { rows } = await db.query(findOneQueryUser, [req.params.parcelId, req.user.id]);
@@ -160,8 +160,8 @@ const Parcels = {
       return res.status(400).send(err);
     }
   },
-  // Change the present location of a specific parcel delivery order
-  async ChangePresentLocation(req, res) {
+
+  async changePresentLocation(req, res) {
     try {
       const { rows } = await db.query(findOneQueryAdmin, [req.params.parcelId]);
       if (!rows[0]) {
@@ -185,6 +185,7 @@ const Parcels = {
       return res.status(400).send(err);
     }
   },
+
   async changeDestination(req, res) {
     try {
       const { rows } = await db.query(findOneQuery, [req.params.parcelId, req.user.id]);
@@ -210,6 +211,7 @@ const Parcels = {
       return res.status(400).send(err);
     }
   },
+
   async changeStatus(req, res) {
     try {
       const { rows } = await db.query(findOneQueryAdmin, [req.params.parcelId]);
@@ -222,7 +224,6 @@ const Parcels = {
         rows[0].id,
       ];
       const response = await db.query(updateStatuQuery, updateValues);
-      // fetch user
       const userResponse = await db.query(getUserQuery, [response.rows[0].owner_id]);
 
       if (response.rows[0].status === parcelStatus.ARRIVED
@@ -230,7 +231,6 @@ const Parcels = {
         || response.rows[0].status === parcelStatus.CANCELLED) {
         return res.status(202).send({ message: 'Change status failed, Parcel has been arrived, delivered or cancelled ', status: 202 });
       }
-      // send email
       mailSender.newUserEmail(
         userResponse.rows[0].email,
         userResponse.rows[0].first_name,
@@ -247,4 +247,4 @@ const Parcels = {
   },
 };
 
-export default Parcels;
+module.exports = Parcels;
