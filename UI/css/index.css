@@ -15,12 +15,12 @@
 
 .navbar {
     background-color: rgb(135, 90, 146);
-    height: 130px;
+    height: 132px;
 }
 
 .dropdown-item,
 a {
-    background-color: #b2b3c5;
+    background-color: #141cc4;
     padding: 10px 0;
     font-size: 20px;
 }
