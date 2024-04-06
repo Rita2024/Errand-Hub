@@ -1,58 +1,26 @@
-:root {
-    --container-fluid-bcg: rgb(180, 83, 224);
-    --container-fluid-h1-txt-color: 23px;
-}
-
-/* image logo */
-.navbar img {
-    padding-bottom: 28px;
-    margin-left: 29px;
-}
-
-.container-fluid {
-    padding-top: 0;
-
-}
-
-
-
-.container-fluid h1 {
-    font-size: var(--container-fluid-h1-txt-color);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    margin-right: 12%;
-    font-size: 22px;
-    color: rgb(56, 29, 150);
-    /* Changing the text color of my header*/
-}
-
-/* Making the background color of the header section to fit without margin */
 .navbar,
 .container-fluid {
-    background-color: var(--container-fluid-bcg);
+    background-color: var(--container-fluid-bg);
     font-size: 20px;
 }
 
-/* changing the background color and border-radius of the unordered list item */
 .navbar-nav a:hover {
     color: #fff !important;
-    background: linear-gradient(0, #2e3192, #1bffff);
+    background: linear-gradient(0, #2ecfd4, #1bffff);
     border-radius: 11px;
     padding-left: 10px;
     padding-right: 10px;
 
 }
 
-a:hover {
-    transition: 0.s;
-    color: #fff;
+.navbar {
+    background-color: rgb(135, 90, 146);
+    height: 130px;
 }
 
 .dropdown-item,
 a {
-    background-color: #37c2b6;
-    /* Change background color on hover */
+    background-color: #b2b3c5;
     padding: 10px 0;
     font-size: 20px;
 }
@@ -63,9 +31,34 @@ a {
 }
 
 .navbar-nav .nav-link {
-    font-size: 16px;
+    font-size: 17px;
     margin-left: 15px;
-    /* font-weight: 25px; */
+}
+
+.container-fluid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+nav .navbar {
+    height: 60%;
+}
+
+.navbar img {
+    padding-bottom: 25px;
+    margin-left: 28px;
+}
+
+.container-fluid h1 {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-right: 12%;
+    font-size: 22px;
+    color: #fff;
+    font-size: 30px;
+
 }
 
 .dropdown-menu .dropdown-item {
@@ -74,5 +67,11 @@ a {
 }
 
 .navbar-nav {
-    margin-left: 10em;
+    margin-left: 9em;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: lightseagreen;
+    background-color: #2e3192;
 }
