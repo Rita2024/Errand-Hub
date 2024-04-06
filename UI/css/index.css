@@ -13,6 +13,11 @@
 
 }
 
+.nav-item a {
+    color: #fff;
+    font-weight: 500;
+}
+
 .navbar {
     background-color: rgb(135, 90, 146);
     height: 132px;
@@ -62,7 +67,7 @@ nav .navbar {
 }
 
 .dropdown-menu .dropdown-item {
-    background-color: #fff;
+    background-color: rgb(211, 28, 28);
     font-size: 15px;
 }
 
@@ -72,6 +77,6 @@ nav .navbar {
 
 a:hover {
     transition: 0.5s;
-    color: lightseagreen;
+    color: #333;
     background-color: #2e3192;
 }
