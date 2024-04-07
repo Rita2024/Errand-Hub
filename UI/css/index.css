@@ -255,10 +255,16 @@ a:hover {
     }
 }
 
-#section-about {
+.container-b {
     background-color: lightgrey;
     padding-bottom: 20px;
-    background-image: url('/UI/images/background.jpg');
+    background-image: url('/UI/images/about.jpg');
+
+}
+
+#section-about h1 {
+    background-color: #3395d6;
+    ;
 }
 
 
