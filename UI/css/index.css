@@ -109,7 +109,21 @@ a:hover {
 }
 
 
-.container-slider {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+}
+
+.container {
     max-width: 1200px;
     width: 95%;
 }
@@ -218,7 +232,7 @@ a:hover {
     bottom: -10px;
 }
 
-
+/* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
         display: none !important;
@@ -239,6 +253,7 @@ a:hover {
         width: 20%;
     }
 }
+
 
 footer {
     background-color: rgb(139, 208, 231);
