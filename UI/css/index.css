@@ -20,7 +20,7 @@
 
 .navbar {
     background-color: rgb(135, 90, 146);
-    height: 132px;
+    height: 115px;
 }
 
 .dropdown-item,
@@ -43,6 +43,7 @@ a {
 .container-fluid {
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-left: 50px;
 }
 
 nav .navbar {
