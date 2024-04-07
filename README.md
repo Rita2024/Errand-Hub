@@ -35,10 +35,8 @@ Stephen Joshua and Fabian Imoh are responsible for the frontend development. And
 The backend development is led by Rita Ejezie and Ojeifo David. And will be working with the following technologies:
 - Node JS [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="60" height="60" alt="Node.js Logo">](https://nodejs.org/)
 - Express JS [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="60" height="60" alt="Express.js Logo">](https://expressjs.com/)
-- MongoDB [<img src="https://webassets.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png" width="60" height="60" alt="MongoDB Logo">](https://www.mongodb.com/)
-- Mongoose [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongoose/mongoose-original.svg" width="60" height="60" alt="Mongoose Logo">](https://mongoosejs.com/)
-- Redis [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" width="60" height="60" alt="Redis Logo">](https://redis.io/)
-- Python [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" height="60" alt="Python Logo">](https://www.python.org/) `for specific backend functionalities`
+- PostgreSQL[<img src="https://webassets.postgresql.com/_com_assets/" width="60" height="60" alt="PostgreSQL Logo">](https://www.postgresql.com/)
+- 
 
 ## Installation :accessibility: 💻🖱️
 ##### 🧰 To set up and run the Courier Management System Web Application locally, follow these steps:
