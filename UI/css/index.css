@@ -323,13 +323,17 @@ form .button {
     text-decoration: underline;
 }
 
+
+
+.footer {
+    background-color: #787bc4;
+    color: white;
+    height: 140px;
+    margin-bottom: 0px;
 }
 
-footer {
-    background-color: rgb(139, 208, 231);
-}
-
-footer a {
+.footer a {
     text-decoration: none;
-    background-color: rgb(139, 208, 231);
+    background-color: #787bc4;
+    color: white;
 }
