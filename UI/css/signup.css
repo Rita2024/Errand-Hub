@@ -351,7 +351,7 @@ form .button {
 }
 
 .signup {
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -359,6 +359,12 @@ form .button {
     color: #3498db;
     text-decoration: none;
 }
+
+#reg-sec {
+    background-image: url('/UI/images/successful-img.jpg');
+    height: 70vh;
+}
+
 
 #showcase-s {
     background-image: url('/UI/images/delivery-man.jpg');
