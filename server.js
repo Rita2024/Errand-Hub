@@ -11,7 +11,7 @@ const db = require('./src/db/db.js'); // Import your database connection setup
 
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 5432;
+const port = process.env.PORT || 3000;
 
 const swaggerDocument = YAML.load('api-docs.yml');
 
