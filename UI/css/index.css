@@ -137,6 +137,14 @@ a:hover {
 
 }
 
+#showcase-p {
+    background-image: url('/UI/images/delivery-man.jpg');
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Style for login form */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
