@@ -298,3 +298,15 @@ h1 {
     margin-bottom: 20px;
     padding-left: 18%;
 }
+
+.container-b {
+    background-color: lightgrey;
+    padding-bottom: 20px;
+    background-image: url('/UI/images/about.jpg');
+
+}
+
+#section-about h1 {
+    background-color: #3395d6;
+
+}
