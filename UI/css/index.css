@@ -365,6 +365,10 @@ form .button {
     margin-bottom: 3%;
 }
 
+#services {
+    background-color: lightgray;
+}
+
 .footer {
     background-color: #787bc4;
     color: white;
