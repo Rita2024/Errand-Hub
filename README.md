@@ -25,18 +25,21 @@ The primary purpose of this project is to create a user-friendly platform that f
 
 
 #### Frontend Technologies
-Stephen Joshua and Fabian Imoh are responsible for the frontend development. And will be utilizing:
-- React JS [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="60" height="60" alt="React.js Logo">](https://reactjs.org/)
+Stephen Joshua and Fabian Imoh are responsible for the frontend development using languages like:
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="60" height="60" alt="JavaScript Logo">](https://www.javascript.com/)JavaScript.
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="60" height="60" alt="CSS Logo">](https://www.w3.org/Style/CSS/Overview.en.html)CSS.
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="60" height="60" alt="HTML Logo">](https://developer.mozilla.org/en-US/docs/Web/HTML)HTML
+
+
 
 #### Backend Technologies
 The backend development is led by Rita Ejezie and Ojeifo David. And will be working with the following technologies:
-- Node JS [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="60" height="60" alt="Node.js Logo">](https://nodejs.org/)
-- Express JS [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="60" height="60" alt="Express.js Logo">](https://expressjs.com/)
-- PostgreSQL[<img src="https://webassets.postgresql.com/_com_assets/" width="60" height="60" alt="PostgreSQL Logo">](https://www.postgresql.com/)
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="60" height="60" alt="Node.js Logo">](https://nodejs.org/)Node JS.
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="60" height="60" alt="Express.js Logo">](https://expressjs.com/)Express JS.
+- [<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="60" height="60" alt="PostgreSQL Logo">](https://www.postgresql.org/)PostgreSQL.
 
-### Languages 
 
-## Installation :accessibility: 💻🖱️
+
 
 ## Conclusion 🖋️
 We are excited about this project and believe that it will serve as a robust portfolio piece for our team. The collaboration between backend and frontend developers ensures a well-rounded and functional Courier Management System. Feel free to explore the codebase and contribute to the project's development!
