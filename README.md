@@ -17,7 +17,6 @@ The primary purpose of this project is to create a user-friendly platform that f
 
 ##### Features
 - `User authentication for secure access to the system`.
-- `Package tracking to monitor the status and location of packages in real-time`.
 - `Dashboard for users to initiate package pick-up requests and view delivery status`.
 - `Admin panel for managing courier logistics, including assigning drivers and updating delivery routes`.
 - `Project Structure`
