@@ -47,3 +47,86 @@
             </div>
         </div>
     </nav>
+    <section id="signup-page">
+        <div class="container-k">
+            <header style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Create an account</header>
+            <form action="{{ url_for('auth.register') }}" method="post">
+                <div class="row">
+                    <div class="input-field col-6">
+                        <input name="first_name" id="first_name" type="text" required>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-field col-6">
+                        <input name="last_name" id="last_name" type="text" required>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col-6">
+                        <input name="age" id="age" type="number" required>
+                        <label>Age</label>
+                    </div>
+                    <div class="input-field col-6">
+                        <input name="email" type="email" required>
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col-6">
+                        <input name="phone_number" type="tel" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="input-field col-6">
+                        <input name="date" type="date">
+                        <label>Date Of Birth</label>
+                    </div>
+                </div>
+
+                <div class="input-field">
+                    <input name="address" type="text" class="addres" required>
+                    <label for="address">Address</label>
+                </div>
+                <div class="input-field">
+                    <input name="blood_group" type="text" class="addres" required>
+                    <label for="blood_group">Blood Group</label>
+                </div>
+                <div>
+                    <div class="sex-selector" style="font-weight: 500;">
+                        <label for="gender">Select gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                    </div>
+                    <div class="input-field">
+                        <input name="password" class="pswrd" type="password" required>
+                        <span class="show">SHOW</span>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input name="password" class="pswrd" type="password" required>
+                        <span class="show">SHOW</span>
+                        <label>Confirm password</label>
+                    </div>
+                    <div class="button">
+                        <div class="inner"></div>
+                        <button type="submit">SIGN UP</button>
+                    </div>
+            </form>
+            <div class="auth">
+                Or login with
+            </div>
+            <div class="links">
+                <div class="facebook">
+                    <i class="fab fa-facebook-square"><span>Facebook</span></i>
+                </div>
+                <div class="google">
+                    <i class="fab fa-google-plus-square"><span>Google</span></i>
+                </div>
+            </div>
+            <div class="signup">
+                Already a member? <a href="{{ url_for('auth.login') }}">login now</a>
+            </div>
+        </div>
+    </section>
