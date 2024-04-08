@@ -1,48 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Errand-Hub | Welcome </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="descrition" content="Web app to deliver parcels">
-    <meta name="kewords" content="Parcel, Delivery">
-    <meta name="author" content="Errand-Hub">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/message.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-P37/WZ9536M3qOmFzhZVs68rKbNlEwh8c2VsuS3ijzHlB+caHc61xjz1m2szwO8AtUMjyz3Lp1bUz1lEo7JhJg==" crossorigin="anonymous" />
-    <script src="./js/login.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <link rel="stylesheet" href="/UI/css/login.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Login</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span class="highlight">Errand-Hub</span></h1>
+    <nav class="navbar navbar-expand-lg">
+        <img src="/UI/images/logo.png" alt="logo" style="height: auto; width: 70px;">
+        <div class="container-fluid">
+
+            <h1>Errand-Hub</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/UI/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Getting started
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="">Sign in</a></li>
+                            <li><a class="dropdown-item" href="">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home |</a></li>
-                    <li><a href="about.html">What we do |</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
-        <div class="container">
-            <div class="login-page">     
-                <div class="output" id="output"></div>
-                
-                <div style="display: none;" id="output-error" class="error-msg">
-                    <i class="fa fa-times-circle"></i>
-                </div>    
-                
-                <input id="email-login" class="input_g" type="text" placeholder="email"/><br>
-                <input id="password-login" class="input_g" type="password" placeholder="password" /><br>
-                <input class="button_1" type="button" value="Login" id="submit-login"/>
-                <br>
-                <p class="message">Not registered? <a href="signUp.html">Create an account</a></p>
+    </nav>
+
+
+    <div class="container-k">
+        <header style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Login Form</header>
+        <form action="{{ url_for('auth.login') }}" method="post">
+            <div class="input-field">
+                <input type="text" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input class="pswrd" type="password" id="password" name="password" required>
+                <span class="show">SHOW</span>
+                <label for="password">Password</label>
+            </div>
+            <div class="button">
+                <div class="inner"></div>
+                <button type="submit">LOGIN</button>
+            </div>
+        </form>
+        <div class="auth">
+            Or login with
+        </div>
+        <div class="links">
+            <div class="facebook">
+                <i class="fab fa-facebook-square"><span>Facebook</span></i>
+            </div>
+            <div class="google">
+                <i class="fab fa-google-plus-square"><span>Google</span></i>
             </div>
         </div>
-    <footer>Errand-Hub &copy; 2024</footer>
+        <div class="signup">
+            Not a member? <a href="{{ url_for('auth.register') }}"> Signup now</a>
+        </div>
+    </div>
+    <!--About page-->
+    <section id="section-about">
+        <div class="header-about">
+            <h1 style="text-align: center; color: #fff; margin-top: 100px;">About Us</h1>
+        </div>
+        <div class="container-b">
+            <h2 style="text-align: center;color: #fff;">Our Mission</h2>
+            <p style="text-align: center;color: #fff; font-size:22px;">Errand Couriers is committed to providing fast
+                and reliable
+                delivery services to meet all your errand
+                needs.</p>
+
+            <h2 style="text-align: center;color: #fff;">Our Team</h2>
+            <p style="text-align: center;color: #fff; font-size: 22px;">Our team comprises dedicated professionals in
+                logistics, customer service, and delivery operations toensure prompt and efficient service for our
+                clients.</p>
+
+            <h2 style="text-align: center;color: #fff;">Our Vision</h2>
+            <p style="text-align: center;color: #fff;font-size: 22px;">Our vision is to redefine the courier service
+                industry by
+                offering seamless and convenient delivery
+                solutions that simplify your daily tasks and enhance your productivity.</p>
+        </div>
+    </section>
+    <!--contact section-->
+    <!--contact section-->
+    <section class="tm-section-5" id="tm-section-5"
+        style="padding-top: 30px; background-color:lightgray; border-top: 1px solid lightgoldenrodyellow;">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-xs-12">
+                <div class="contact_message">
+                    <form action="" method="post" class="contact-form">
+                        <div class="row mb-2">
+                            <div class="form-group col-xl-6">
+                                <input type="text" id="contact_name" name="contact_name" class="form-control"
+                                    placeholder="Name" required />
+                            </div>
+                            <div class="form-group col-xl-6 pl-xl-1">
+                                <input type="email" id="contact_email" name="contact_email" class="form-control"
+                                    placeholder="Email" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact_message" name="contact_message" class="form-control" rows="6"
+                                placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn  tm-btn-submit float-right btn-big"
+                            style="border: 2px solid #333">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-xs-12 tm-contact-right">
+                <div class="tm-address-box">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p class="mb-5"></p>
+                    <address>
+                        158 Glover Road, Ikoyi Lagos, Nigeria.
+                        <p><br>TEL: +2349054365182
+                            <br>E-mail: errandhub21@gmail.com
+                        </p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- This the footer section -->
+    <footer class="footer py-1">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <a href="mailto:your.email@gmail.com"><i class="fab fa-google"></i> Gmail</a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                                aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h5>Evergreen-hospital</h5>
+                    <p>No. 70, Allen Ikeja lagos, Nigeria</p>
+                    <p>&copy; 2024 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
