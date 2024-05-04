@@ -21,7 +21,7 @@ window.onload = () => {
     const createBtn = document.getElementById('createbtn-parcel');
     const createParcel = async () => {
       const token = await localStorage.getItem('token');
-      fetch('https://andela-dev-challenge.herokuapp.com/api/v1/parcels', {
+      fetch('https://localhost:3000/api/v1/parcels', {
         method: 'POST',
         body: JSON.stringify({
           location,

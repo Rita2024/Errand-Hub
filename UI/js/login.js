@@ -5,7 +5,7 @@ window.onload = () => {
     const password = document.getElementById('password-login');
     const loginBtn = document.getElementById('submit-login');
     const login = () => {
-      fetch('https://andela-dev-challenge.herokuapp.com/api/v1/auth/login', {
+      fetch('https://localhost:3000/api/v1/auth/login', {
         method: 'POST',
         body: JSON.stringify({ email: email.value, password: password.value }),
         headers: {

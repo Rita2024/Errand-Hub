@@ -12,7 +12,7 @@ window.onload = async () => {
     const pricePerKg = 100;
     const myparcelTable = document.getElementById('parcels');
     (this.parcels = () => {
-      fetch('https://andela-dev-challenge.herokuapp.com/api/v1/users/:userId/parcels', {
+      fetch('https://localhost:3000/api/v1/users/:userId/parcels', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ window.onload = async () => {
     })();
     // cancel a parcel
     this.cancel = (item) => {
-      fetch(`https://andela-dev-challenge.herokuapp.com/api/v1/parcels/${item}/cancel`, {
+      fetch(`https://localhost:3000/api/v1/parcels/${item}/cancel`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'Application/JSON',
